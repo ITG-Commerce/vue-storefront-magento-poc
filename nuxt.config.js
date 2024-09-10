@@ -24,6 +24,9 @@ const {
 
 export default async () => {
   const baseConfig = {
+    nitro: {
+      preset: 'vercel-edge',
+    },
     ssr: true,
     dev: process.env.VSF_NUXT_APP_ENV !== 'production',
     publicRuntimeConfig: {
