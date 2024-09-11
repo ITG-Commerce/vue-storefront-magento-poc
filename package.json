@@ -23,7 +23,7 @@
     "test:e2e": "cypress open --config-file __tests__/e2e/cypress.json",
     "test:e2e:hl": "cypress run --headless --config-file __tests__/e2e/cypress.json",
     "test:e2e:generate:report": "yarn -s mochawesome-merge \"__tests__/e2e/report/*.json\" > \"__tests__/e2e/report.json\" && yarn -s marge __tests__/e2e/report.json -o \"__tests__/e2e/report\"",
-    "postinstall": "patch-package"
+    "postinstall": "npx patch-package"
   },
   "dependencies": {
     "@beyonk/google-fonts-webpack-plugin": "^1.7",
