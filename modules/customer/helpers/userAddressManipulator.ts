@@ -23,6 +23,7 @@ export const transformUserCreateAddressInput = (addressInputParams): CustomerAdd
 };
 
 export const transformUserUpdateAddressInput = (addressInputParams): {
+  id: number;
   addressId: number;
   input: CustomerAddressInput;
 } => {
@@ -62,6 +63,7 @@ export const transformUserUpdateAddressInput = (addressInputParams): {
   };
 
   return {
+    id,
     addressId: id,
     input: {
       ...addressParams,

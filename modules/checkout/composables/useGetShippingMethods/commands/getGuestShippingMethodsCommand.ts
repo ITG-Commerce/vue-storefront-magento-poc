@@ -5,7 +5,7 @@ import { AvailableShippingMethod } from '~/modules/GraphQL/types';
 export const getGuestShippingMethodsCommand = {
   execute: async (context: Context['app'], params: ComposableFunctionArgs<{ cartId: string }>): Promise<AvailableShippingMethod[]> => {
     const { data } = await context.$vsf.$magento.api.getAvailableShippingMethods(
-      { cartId: params.cartId },
+      { cart_id: params.cartId },
       params?.customQuery ?? null,
       params?.customHeaders,
     );
