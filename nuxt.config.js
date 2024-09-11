@@ -24,6 +24,13 @@ const {
 
 export default async () => {
   const baseConfig = {
+    babel: {
+      presets(env, [ preset, options ]) {
+        return [
+          [ "@nuxt/babel-preset-app", options ]
+        ]
+      }
+    },
     nitro: {
       preset: 'vercel-edge',
     },

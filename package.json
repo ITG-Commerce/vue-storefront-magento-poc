@@ -66,6 +66,7 @@
     "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
     "@commitlint/config-conventional": "^13.2.0",
     "@lhci/cli": "^0.11.0",
+    "@nuxt/babel-preset-app": "^2.18.1",
     "@nuxt/types": "latest",
     "@nuxt/typescript-build": "2.1.0",
     "@pinia/testing": "^0.0.12",
